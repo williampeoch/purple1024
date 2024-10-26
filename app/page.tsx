@@ -1,3 +1,4 @@
+import { NewThread } from "@/components/new-thread";
 import { db } from "@/drizzle/db";
 import { openingPosts, replies } from "@/drizzle/schema";
 import { sql } from "drizzle-orm";
@@ -26,6 +27,10 @@ export default async function Home() {
           PURPLE1024
         </Link>
         <p className="text-xs">Where anything can only be said once.</p>
+      </div>
+
+      <div className="pb-10">
+        <NewThread />
       </div>
 
       <div className="grid max-w-[1300px] grid-cols-1 items-center gap-4 px-4 pb-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
