@@ -43,7 +43,7 @@ export function NewThread() {
         setCaptchaOpen(false);
         if (inputText.length < 1) return;
 
-        // setPostRes(await createPost(inputText, null, captchaToken));
+        setPostRes(await createPost(inputText, null, captchaToken));
 
         setIsLoading(false);
     };

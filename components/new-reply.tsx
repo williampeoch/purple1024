@@ -43,7 +43,7 @@ export function NewReply(props: { parentPost: string }) {
         setCaptchaOpen(false);
         if (inputText.length < 1) return;
 
-        // setPostRes(await createPost(inputText, props.parentPost, captchaToken));
+        setPostRes(await createPost(inputText, props.parentPost, captchaToken));
 
         setIsLoading(false);
     };

@@ -1,11 +1,11 @@
-"use server"
+"use server";
 
 import { db } from "@/drizzle/db";
 import { openingPosts, replies } from "@/drizzle/schema";
 import MistralClient from "@mistralai/mistralai";
 import { cosineDistance, eq, gt, sql } from "drizzle-orm";
 import { nanoid } from "nanoid";
-import { revalidatePath } from "next/cache";{}
+import { revalidatePath } from "next/cache";
 
 export async function createPost(
     content: string,
