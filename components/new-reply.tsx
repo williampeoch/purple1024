@@ -1,5 +1,6 @@
 "use client";
 
+import { createPost } from "@/app/_actions/create-posts";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
