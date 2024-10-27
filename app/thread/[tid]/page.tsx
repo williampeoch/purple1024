@@ -1,3 +1,4 @@
+import { NewReply } from "@/components/new-reply";
 import { db } from "@/drizzle/db";
 import { openingPosts, replies } from "@/drizzle/schema";
 import { asc, eq } from "drizzle-orm";
@@ -28,7 +29,7 @@ export default async function Thread({ params }: { params: { tid: string } }) {
                     href={"/"}
                     className="select-none text-3xl font-bold transition-all hover:text-neutral-600"
                 >
-                    ROBOT1024
+                    PURPLE1024
                 </Link>
                 <p className="text-xs">Where anything can only be said once.</p>
         </div>
@@ -58,6 +59,10 @@ export default async function Thread({ params }: { params: { tid: string } }) {
                     );
                 })}
             </div>
+        </div>
+
+        <div className="pb-36 pt-16">
+            <NewReply parentPost={openingPostWithReplies.id}/>
         </div>
 
         </main>

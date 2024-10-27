@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.11.0",
+    "@mistralai/mistralai": "^1.1.0",
     "@next/env": "^14.2.15",
     "@vercel/postgres": "^0.10.0",
     "drizzle-orm": "^0.35.3",
